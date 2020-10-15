@@ -4,9 +4,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter`,
-    description: `Gatsby Starter`,
-    author: `Polychronis Papadakis`,
+    title: `Margarita Margariti`,
+    description: `This is my personal blog`,
+    author: `Giorgos Kalmoukis`,
   },
   plugins: [
     `gatsby-plugin-flow`,
@@ -69,14 +69,6 @@ module.exports = {
           unsafe: false,
         },
       },
-    },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken:process.env.CONTENTFUL_ACCESS_TOKEN,
-        environment: process.env.CONTENTFUL_ENV,
-      }
-    },
+    }
   ],
 }
